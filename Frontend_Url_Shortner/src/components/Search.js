@@ -30,7 +30,7 @@ const Search = () => {
     setStatus(false)
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:4000/api/url/shorten", {
+      const res = await axios.post("https://ruls.vercel.app/api/url/shorten", {
         longUrl:url,
       });
       if (res.data) {
