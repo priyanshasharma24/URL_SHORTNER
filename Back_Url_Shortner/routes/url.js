@@ -10,7 +10,7 @@ const Url = require('../models/Url');
 
 router.post('/shorten', async (req, res) => {
   const { longUrl } = req.body;
-  const baseUrl = "http://localhost:4000";
+  const baseUrl = "https://ruls.vercel.app";
 
 
   // Check long url
